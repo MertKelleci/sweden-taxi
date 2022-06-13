@@ -10,7 +10,7 @@ app.listen(4000, () => console.log(`Backend Listening on port 4000`));
 const connectWithRetry = () => {
   mongoose
     .connect(
-      "mongodb+srv://Mert:46069338852@cluster0.mei0v.mongodb.net/CarsDB?retryWrites=true&w=majority"
+      "mongodb+srv://<USERNAME:PASSWORD>@cluster0.mei0v.mongodb.net/CarsDB?retryWrites=true&w=majority"
     )
     .then(() => console.log("Connected to the Mongo Atlas Database"))
     .catch((e) => {
