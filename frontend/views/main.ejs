@@ -1,0 +1,62 @@
+<%- include("partials/mapHeader") %>
+<div id="map"></div>
+<div id="sidebar">
+  <form>
+    <div class="form-floating">
+      <input
+        id="Date1"
+        type="date"
+        class="form-control form-input"
+        name="Date1"
+      />
+      <label for="Date1">Başlangıç Günü</label>
+    </div>
+    <div class="form-floating">
+      <input
+        id="Hour1"
+        type="time"
+        class="form-control form-input"
+        name="Hour1"
+      />
+      <label for="Hour1">Başlangıç Saati</label>
+    </div>
+    <!-- ---------------------------------------- -->
+
+    <!-- ---------------------------------------- -->
+    <div class="form-floating">
+      <input
+        id="Date2"
+        type="date"
+        class="form-control form-input"
+        name="Date2"
+      />
+      <label for="Date1">Bitiş Günü</label>
+    </div>
+    <div class="form-floating">
+      <input
+        id="Hour2"
+        type="time"
+        class="form-control form-input"
+        name="Hour2"
+      />
+      <label for="Hour2">Bitiş Saati</label>
+    </div>
+
+    <select id="select" class="form-select" aria-label="Default select example">
+      <option selected>Araç Seçin</option>
+      <option value="1">1. Araç</option>
+      <option value="2">2. Araç</option>
+      <option value="3">3. Araç</option>
+      <option value="4">4. Araç</option>
+    </select>
+    <button id="button" class="w-100 btn btn-lg btn-primary" type="submit">
+      Ara
+    </button>
+  </form>
+</div>
+<script
+  async
+  defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuFdKZBQ-W1doQ_Pgc8DM-AQDlPrM-ECQ&callback=initMap"
+></script>
+<%- include("partials/footer") %>

@@ -1,0 +1,34 @@
+#map {
+  height: 100%;
+  width: 80%;
+  float: left;
+}
+
+#sidebar {
+  height: 100%;
+  width: 20%;
+  background-color: #fefefe;
+  display: inline-block;
+}
+
+#Date1,
+#Hour1,
+#Date2,
+#Hour2,
+#select,
+#button {
+  margin: 3%;
+  margin-right: 5%;
+}
+
+#Hour1,
+#Hour2 {
+  margin-bottom: 10%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
